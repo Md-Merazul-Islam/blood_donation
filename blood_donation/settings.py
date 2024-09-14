@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = [
     'https://blood-donation-shdt.onrender.com',
+    'https://blood-donation.up.railway.app',
 ]
 
 
