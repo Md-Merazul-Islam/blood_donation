@@ -5,7 +5,7 @@ from django.db import IntegrityError
 class DonorForm(forms.ModelForm):
     class Meta:
         model = Donor
-        fields = ['name', 'blood_group', 'address', 'phone_number']
+        fields = ['blood_group', 'name',  'address', 'phone_number']
 
     def save(self, commit=True):
         try:
