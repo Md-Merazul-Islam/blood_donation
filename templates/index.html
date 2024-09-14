@@ -5,10 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="jumbotron text-center bg-light shadow-lg">
-                <h1 class="display-4 mb-4">
-                    <i class="fas fa-heartbeat"></i> Blood Donation System
-                </h1>
-                <p class="lead mb-5">Help save lives by donating blood or finding donors in need.</p>
+                <h3 class="mb-4 custom-font text-center">
+                    <i class="fas fa-heartbeat text-danger"></i> তুচ্ছ নয় রক্তদান, 
+                    বাঁচাতে পারে একটি প্রাণ<i class="fas fa-heartbeat text-danger"></i>
+                </h3>
+                <p class="lead mb-5">আমার রক্তের বাঁচলে প্রান,
+                    করবো না কেন রক্তদান !!!</p>
                 <div class="d-flex justify-content-around">
                     <!-- Add Donor Button -->
                     <a href="{% url 'add_donor' %}" class="btn btn-lg btn-success shadow">
@@ -21,6 +23,23 @@
 
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="card-title text-center">রক্ত দানের উপকারিতা</h2>
+            <ul class="list-unstyled">
+                <li class="mb-3"><strong>স্বাস্থ্য সুবিধা:</strong> নিয়মিত রক্তদান হৃদরোগের ঝুঁকি কমাতে সাহায্য করতে পারে এবং শরীরের আয়রন স্তর নিয়ন্ত্রণে রাখতে সাহায্য করে।</li>
+                <li class="mb-3"><strong>নতুন রক্ত তৈরিতে সাহায্য:</strong> রক্তদান করার পর, শরীর নতুন রক্ত তৈরি করতে শুরু করে, যা শরীরের টিস্যুগুলির জন্য প্রয়োজনীয় পুষ্টি সরবরাহ করে।</li>
+                <li class="mb-3"><strong>ক্যালোরি বার্ন:</strong> রক্তদান প্রক্রিয়ার সময় কিছু ক্যালোরি বার্ন হয়, যা ওজন নিয়ন্ত্রণে সাহায্য করতে পারে।</li>
+                <li class="mb-3"><strong>সামাজিক অবদান:</strong> আপনার রক্তদান অন্যদের জীবন বাঁচাতে সাহায্য করতে পারে এবং বিভিন্ন রোগ ও দুর্ঘটনার জন্য প্রয়োজনীয় রক্ত সরবরাহ নিশ্চিত করে।</li>
+                <li class="mb-3"><strong>স্বাস্থ্য পরীক্ষা:</strong> রক্তদান করার সময় আপনার রক্তের স্বাস্থ্য পরীক্ষা করা হয়, যা আপনার সুস্থতার সম্পর্কিত কিছু গুরুত্বপূর্ণ তথ্য প্রদান করতে পারে।</li>
+                <li class="mb-3"><strong>মনোবল বৃদ্ধি:</strong> অন্যদের সাহায্য করার মাধ্যমে ব্যক্তিগত সন্তুষ্টি এবং মনোবল বৃদ্ধি পেতে পারে।</li>
+                <li><strong>বৈশিষ্ট্যগত তাপমাত্রা নিয়ন্ত্রণ:</strong> রক্তদান করার পর শরীরের তাপমাত্রা স্বাভাবিক থাকে, যা কিছু ক্ষেত্রে শরীরের তাপমাত্রা নিয়ন্ত্রণে সাহায্য করতে পারে।</li>
+            </ul>
         </div>
     </div>
 </div>
@@ -55,4 +74,9 @@
         }
     }
     
+    .custom-font {
+        font-family: 'Noto Sans Bengali', sans-serif;
+        font-weight: bold;
+        
+    }
 </style>
