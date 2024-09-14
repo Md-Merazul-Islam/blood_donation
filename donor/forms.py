@@ -1,14 +1,14 @@
 from django import forms
 from .models import Donor
-from django.db import IntegrityError
 
 class DonorForm(forms.ModelForm):
     class Meta:
         model = Donor
-        fields = ['blood_group', 'name',  'address', 'phone_number']
+        fields = ['blood_group','name',  'phone_number', 'address']
 
-    def save(self, commit=True):
-        try:
-            return super().save(commit=commit)
-        except IntegrityError:
-            self.add_error('phone_number', 'A donor with this phone number already exists.')
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter donor name'}),
+            'blood_group': forms.Select(attrs={'class': 'form-select', 'required': 'required'}),
+            'phone_number': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter phone number'}),
+            'address': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter present address'}),
+        }
