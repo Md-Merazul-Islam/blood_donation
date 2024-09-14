@@ -48,7 +48,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto"> <!-- Pushes items to the left -->
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold nav-hover" href="{% url 'home_page' %}">
                         <i class="fas fa-home"></i> Home
@@ -65,9 +65,16 @@
                     </a>
                 </li>
             </ul>
+            <ul class="navbar-nav ml-auto"> <!-- Aligns Help item to the right -->
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold nav-hover" href="https://api.whatsapp.com/send/?phone=%2B8801401734625&text=Hello%20plz%20help%20me%20in%20blood%20donation">
+                        <i class="fas fa-phone"></i> Contact With Developer
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
-
+    
     <!-- Content -->
     <div class="container mt-5">
         {% block content %}
