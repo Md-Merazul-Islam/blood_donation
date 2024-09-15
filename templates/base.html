@@ -20,23 +20,23 @@
         }
         
         .nav-hover:hover {
-            color: #ffcccb !important;  /* Light red color for hover effect */
-            background-color: rgba(255, 255, 255, 0.2); /* Slight background change on hover */
+            color: #ffcccb !important;  
+            background-color: rgba(255, 255, 255, 0.2); 
         }
     
-        /* Add hover effect for the navbar brand */
+
         .navbar-brand:hover {
-            color: #ffcccb !important;  /* Light red for brand on hover */
+            color: #ffcccb !important;  
             transition: color 0.3s ease;
         }
         
-        /* Icon hover effect */
+     
         .nav-link i {
             transition: transform 0.3s ease;
         }
     
         .nav-link:hover i {
-            transform: scale(1.2); /* Slight zoom effect on icon */
+            transform: scale(1.2); 
         }
     </style>
 </head>
@@ -50,7 +50,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto"> <!-- Pushes items to the left -->
+            <ul class="navbar-nav mr-auto"> 
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold nav-hover text-white" href="{% url 'home_page' %}">
                         <i class="fas fa-home"></i> Home
@@ -67,7 +67,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto"> <!-- Aligns Help item to the right -->
+            <ul class="navbar-nav ml-auto"> 
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold nav-hover" href="https://api.whatsapp.com/send/?phone=%2B8801401734625&text=Hello%20plz%20help%20me%20in%20blood%20donation">
                         <i class="fas fa-phone"></i> Contact With Developer

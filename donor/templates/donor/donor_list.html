@@ -33,7 +33,7 @@
                         <th>Name</th>
                         <th>Blood Group</th>
                         <th>Contact</th>
-                        <th>Address</th>  <!-- New column for address -->
+                        <th>Address</th>  
                     </tr>
                 </thead>
                 <tbody>
@@ -42,11 +42,11 @@
                             <td>{{ donor.name }}</td>
                             <td>{{ donor.blood_group }}</td>
                             <td>{{ donor.phone_number }}</td>
-                            <td>{{ donor.address }}</td>  <!-- New data for address -->
+                            <td>{{ donor.address }}</td>  
                         </tr>
                     {% empty %}
                         <tr>
-                            <td colspan="4">No donors found.</td>  <!-- Adjust colspan -->
+                            <td colspan="4">No donors found.</td>  
                         </tr>
                     {% endfor %}
                 </tbody>
@@ -57,10 +57,10 @@
 <style>
     @media (max-width: 768px) {
         .table {
-            font-size: 0.9rem; /* Adjust font size for smaller screens */
+            font-size: 0.9rem; 
         }
         .table td, .table th {
-            padding: 0.5rem; /* Adjust padding */
+            padding: 0.5rem; 
         }
     }
 </style>
